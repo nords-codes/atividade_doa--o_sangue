@@ -37,5 +37,4 @@ form.addEventListener('submit',function (e){
             if(!nome || !email || !idade || !peso || !sangue || !telefone || !cidade || !estado){
                 return erro ("Preencha todos os campos")
             }
-
 })
