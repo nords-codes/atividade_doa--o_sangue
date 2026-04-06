@@ -2,8 +2,6 @@ let form = document.getElementById("formulario");
 
 form.addEventListener('submit',function (e){
 
-    let valido =true
-
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
     let idade = document.getElementById('idade').value;
@@ -37,4 +35,6 @@ form.addEventListener('submit',function (e){
             if(!nome || !email || !idade || !peso || !sangue || !telefone || !cidade || !estado){
                 return erro ("Preencha todos os campos")
             }
+
+            resultado.innerHTMl
 })
