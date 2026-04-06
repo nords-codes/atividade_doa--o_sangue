@@ -6,25 +6,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav></nav>
     <form action="" id="formulario">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" placeholder="Insira seu nome completo">
+        <input type="text" id="nome" placeholder="Insira seu nome completo" required>
         <div id="erroNome" class="erro"></div>
 
         <label for="email">Email:</label>
-        <input type="email" name="" id="email" placeholder="insira seu email">
+        <input type="email" name="" id="email" placeholder="insira seu email" required>
         <div id="erroEmail" class="erro"></div>
 
         <label for="idade">idade</label>
-        <input type="number" id="idade" placeholder="insira sua idade">
+        <input type="number" id="idade" placeholder="insira sua idade" required>
         <div id="erroIdade" class="erro"></div>
 
         <label for="peso">Insira seu peso</label>
-        <input type="number" id="peso" placeholder="Insira seu peso ex:70,00">
+        <input type="number" id="peso" placeholder="Insira seu peso ex:70,00" required>
         <div id="erroPeso" class="erro"></div>
 
         <label for="sangue">Insira seu tipo sanguine</label>
-        <select name="Tipo de sangue" id="sangue">
+        <select name="Tipo de sangue" id="sangue" required>
             <option value="A+"></option>
             <option value="A-"></option>
             <option value="B+"></option>
@@ -34,18 +35,20 @@
             <option value="O+"></option>
             <option value="O-"></option>
         </select>
+        <div id="erroSangue" class="ero"></div>
 
         <label for="telefone">Insira seu telefone</label>
-        <input type="tel" id="telefone" placeholder="ex:55 9999-9999">
+        <input type="tel" id="telefone" placeholder="ex:55 9999-9999" required>
         <div id="erroTelefone" class="erro"></div>
 
         <label for="cidade">Insira a cidade onde mora</label>
-        <input type="text" id="cidade" placeholder="ex:Joinville">
+        <input type="text" id="cidade" placeholder="ex:Joinville" required>
         <div id="erroCidade" class="erro"></div>
 
         <label for="estado">Insira seu estado</label>
-        <input type="text" name="" id="estado" placeholder="ex:Parana">
+        <input type="text" name="" id="estado" placeholder="ex:Parana" required>
         <div id="erroEstado" class="erro"></div>
     </form>
 </body>
+<script src="script.js"></script>
 </html>
