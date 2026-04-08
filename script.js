@@ -36,5 +36,80 @@ form.addEventListener('submit',function (e){
                 return erro ("Preencha todos os campos")
             }
 
-            resultado.innerHTMl
-})
+            switch (sangue){
+        
+        case "A+" :
+        
+        alert("Você poderá doar sangue para os tipos: A+ e AB+"); 
+        alert("E você podera receber Sangue do tipos: A+, A-, O+, O-");
+        break;
+
+        case "A-" :
+        
+        alert("Você poderá doar sangue para os tipos: A+, A-, AB+, AB-"); 
+        alert("E você podera receber Sangue do tipos: A-, O-");
+        break;
+
+
+        case "B+" :
+
+        alert("Você poderá doar sangue para os tipos: B+, AB+"); 
+        alert("E você podera receber Sangue do tipos: B+, B-, O+, O-");
+        break;
+
+        case "B-" :
+
+        alert("Você poderá doar sangue para os tipos: B+, B-, AB+, AB-"); 
+        alert("E você podera receber Sangue do tipos: B-, O-");
+        break;
+
+        case "AB+" :
+
+        alert("Você poderá doar sangue para os tipos: AB+"); 
+        alert("E você podera receber Sangue do tipos: A+, A-, B+, B-, AB+, AB-, O+, O-");
+
+        break;
+
+        case "AB-" :
+
+        alert("Você poderá doar sangue para os tipos: AB+, AB-"); 
+        alert("E você podera receber Sangue do tipos: A-, B-, AB-, O-");
+        break;
+
+        case "O+" :
+
+        alert("Você poderá doar sangue para os tipos: A+, B+, AB+, O+"); 
+        alert("E você podera receber Sangue do tipos: O+, O-");
+        break;
+
+
+        case "O-" :
+
+        alert("Você poderá doar sangue para os tipos: A+, A-, B+, B-, AB+, AB-, O+, O-"); 
+        alert("E você podera receber Sangue do tipos: O-");
+        break;
+
+        default:
+
+        alert("Tipo de Sangue Inválido");
+
+    }
+
+        let resultado= document.getElementById('resultado');
+        resultado.innerHTML=`
+        Dados enviados: <br>
+       nome: ${nome} <br> 
+       email: ${email} <br> 
+       idade: ${idade} <br> 
+       peso: ${peso} <br> 
+    sangue: ${sangue} <br> 
+    telefone: ${telefone} <br> 
+    cidade: ${ciadade} <br> 
+    estado: ${estado} <br> 
+       `;
+    form.reset();
+    
+        }
+   
+    
+)

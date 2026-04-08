@@ -13,7 +13,7 @@
         <div id="erroNome" class="erro"></div>
 
         <label for="email">Email:</label>
-        <input type="email" name="" id="email" placeholder="insira seu email" required>
+        <input type="email" id="email" placeholder="insira seu email" required>
         <div id="erroEmail" class="erro"></div>
 
         <label for="idade">idade</label>
@@ -25,7 +25,7 @@
         <div id="erroPeso" class="erro"></div>
 
         <label for="sangue">Insira seu tipo sanguine</label>
-        <select name="Tipo de sangue" id="sangue" required>
+        <select name="Tipo_sangue" id="sangue" required>
             <option value="A+">A+</option>
             <option value="A-">A-</option>
             <option value="B+">B+</option>
@@ -38,7 +38,7 @@
         <div id="erroSangue" class="ero"></div>
 
         <label for="telefone">Insira seu telefone</label>
-        <input type="tel" id="telefone" placeholder="ex:55 9999-9999" required>
+        <input type="number" id="telefone" placeholder="ex:55 9999-9999" required>
         <div id="erroTelefone" class="erro"></div>
 
         <label for="cidade">Insira a cidade onde mora</label>
@@ -48,8 +48,10 @@
         <label for="estado">Insira seu estado</label>
         <input type="text" name="" id="estado" placeholder="ex:Parana" required>
         <div id="erroEstado" class="erro"></div>
+         <button type="submit">Enviar</button>
     </form>
-    <button onclick=""></button>
+   
+    <div id="resultado"></div>
     </div>
    
 </body>
