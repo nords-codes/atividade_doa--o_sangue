@@ -1,5 +1,42 @@
-#base{
-    background-color: yellow;
-    text-align: center;
-    
+:root{
+    --cor-fundo-2:#dd1717;
+    --cor-fundo:#e2e5e9;
+    --cor-texto:#000000;
+    --cor-botao:#f75555;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--cor-fundo);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+    color: var(--cor-texto);
+}
+main{
+    background-color: var(--cor-fundo-2);
+    border-radius: 5%;
+    gap: 1%;
+    padding: 15px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0.3);
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+#fomulario input{
+    padding: 5px;
+    border: solid var(--cor-texto);
+}
+
+#formulario button:hover{
+background-color: var(--cor-botao);
+}
+#formulario button{
+    border: solid var(--cor-texto);
 }
