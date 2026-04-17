@@ -1,13 +1,16 @@
-:root{
-    --cor-fundo-2:#dd1717;
-    --cor-fundo:#e2e5e9;
-    --cor-texto:#000000;
-    --cor-botao:#f75555;
+:root {
+    --cor-fundo-2: #dd1717;
+    --cor-fundo: #e2e5e9;
+    --cor-texto: #000000;
+    --cor-botao: #f75555;
+    --cor-informações:#ffffff;
 }
-*{
+
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     background-color: var(--cor-fundo);
     display: flex;
     align-items: flex-start;
@@ -15,7 +18,8 @@ body{
     gap: 5%;
     color: var(--cor-texto);
 }
-main{
+
+main {
     background-color: var(--cor-fundo-2);
     border-radius: 5%;
     gap: 1%;
@@ -23,20 +27,25 @@ main{
     box-shadow: 10px 10px 15px rgb(0, 0, 0.3);
 }
 
-#formulario{
+#formulario {
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: flex-end;
 }
-#fomulario input{
+
+#fomulario input {
     padding: 5px;
     border: solid var(--cor-texto);
 }
 
-#formulario button:hover{
-background-color: var(--cor-botao);
+#formulario button:hover {
+    background-color: var(--cor-botao);
 }
-#formulario button{
+
+#formulario button {
     border: solid var(--cor-texto);
+}
+.resultado{
+    color: var(--cor-informações);
 }

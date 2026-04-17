@@ -1,8 +1,9 @@
 let form = document.getElementById("formulario");
 
-form.addEventListener('submit',function (e){
+form.addEventListener('submit', function (e){
+    e.preventDefault();
 
-    let nome = document.getElementById('nome').value;
+     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
     let idade = document.getElementById('idade').value;
     let peso = document.getElementById('peso').value;
@@ -11,15 +12,7 @@ form.addEventListener('submit',function (e){
     let cidade = document.getElementById('cidade').value;
     let estado = document.getElementById('estado').value;
 
-    document.getElementById('erroNome').textContent = '';
-     document.getElementById('erroEmail').textContent = '';
-      document.getElementById('erroIdade').textContent = '';
-       document.getElementById('erroPeso').textContent = '';
-        document.getElementById('erroSangue ').textContent = '';
-         document.getElementById('erroTelefone').textContent = '';
-          document.getElementById('erroCidade').textContent = '';
-           document.getElementById('erroEstado').textContent = '';
-
+   
            if(nome.split (" ").length < 2){
             return erro("Informe nome e sobrenome")
            }
@@ -95,21 +88,18 @@ form.addEventListener('submit',function (e){
 
     }
 
-        let resultado= document.getElementById('resultado');
-        resultado.innerHTML=`
+         let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `
         Dados enviados: <br>
-       nome: ${nome} <br> 
-       email: ${email} <br> 
-       idade: ${idade} <br> 
-       peso: ${peso} <br> 
-    sangue: ${sangue} <br> 
-    telefone: ${telefone} <br> 
-    cidade: ${ciadade} <br> 
-    estado: ${estado} <br> 
-       `;
+        nome: ${nome} <br> 
+        email: ${email} <br> 
+        idade: ${idade} <br> 
+        peso: ${peso} <br> 
+        sangue: ${sangue} <br> 
+        telefone: ${telefone} <br> 
+        cidade: ${cidade} <br> 
+        estado: ${estado} <br> 
+    `;
+
     form.reset();
-    
-        }
-   
-    
-)
+});
